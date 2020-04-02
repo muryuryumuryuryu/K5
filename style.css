@@ -5,13 +5,17 @@ html {
 body {
   margin: 0;
   background-color: white;
+  overflow-x:hidden;
 }
 
 header {
+  display: grid;
   width: 100%;
+  grid-template-rows: 10vh 1.5vh;
 }
 
 nav {
+  grid-row: 1;
   padding: 0;
   width: 100%;
 }
@@ -51,12 +55,84 @@ nav {
   clip-path: circle(50%);
 }
 
+#divider {
+  grid-row: 2;
+  height: auto;
+  width: 90%;
+  margin: 0 auto 0 auto;
+  background-color: #A5A5A5;
+  clip-path: polygon(99% 99%, 100% 0%, 0% 0%, 1% 99%);
+}
+
+.homeArticle {
+	margin: 0;
+	display: grid;
+	grid-template-columns: auto 15vw 30vw 30vw 15vw auto; 
+  grid-template-rows: 88.5vh 90vh 10vh;
+}
+
 h1 {
   font-family: "Changa", sans-serif;
   font-size: 13em;
   margin: 0.5em 0 1.5em 0;
   text-align: center;
+  grid-column: 2 / 6;
+  grid-row: 1 / 2;
+  margin: 15vh auto auto auto;
 }
+
+.Controls {
+  grid-column: 1 / 7;
+  grid-row: 2 / 3;
+  display: grid;
+  grid-template-columns: auto 15vw 35vw 10vw 15vw 15vw auto; 
+  grid-template-rows: 5vh 20vh 10vh 40vh 10vh 5vh;
+  background-color: #827777;
+  clip-path: polygon(100% 0, 100% 90%, 0% 100%, 0 10%);
+}
+
+.Controls h2 {
+  font-family: "Changa", sans-serif;
+  text-align: center;
+  grid-row: 2 / 3;
+  grid-column: 1 / 8;
+  font-size: 9em;
+  margin: 0em;
+  padding: 0em;
+  color: white;
+}
+
+#Controller{
+  grid-row: 4 / 5;
+  grid-column: 3 / 4;
+  width: 35vw;
+  height: auto;
+  margin: auto 0 auto 0;
+}
+
+.Controls .Description {
+  grid-row: 4 / 5;
+  grid-column: 5 / 6;
+  margin: auto 0 auto 0;
+}
+
+.Controls .Description p {
+  font-family: "Changa", sans-serif;
+  font-size: 1em;
+  margin: 0em;
+  color: white;
+}
+
+.Controls .Description #firstP {
+  margin: 0 0 1vh 0;
+  font-size: 1.5em;
+}
+
+.Controls .Description #secondP {
+  margin: 2vh 0 1vh 0;
+  font-size: 1.5em;
+}
+
 
 .webgl-content * {
   border: 0;
