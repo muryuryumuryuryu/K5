@@ -18,6 +18,7 @@ nav {
   grid-row: 1;
   padding: 0;
   width: 100%;
+  height: 10vh;
 }
 
 .mainNav {
@@ -26,6 +27,7 @@ nav {
   padding: 10px;
   overflow: hidden;
   margin-left: 5%;
+  height: 10vh;
 }
 
 .mainNav li {
@@ -39,7 +41,7 @@ nav {
   display: block;
   margin: 10px;
   margin-right: 50px;
-  font-size: 2em;
+  font-size: 4vh;
 }
 
 .mainNav #twitIcon {
@@ -64,6 +66,10 @@ nav {
   clip-path: polygon(99% 99%, 100% 0%, 0% 0%, 1% 99%);
 }
 
+article {
+  background-image: url(TemplateData/abstract-1779564_960_720.png);
+}
+
 .homeArticle {
 	margin: 0;
 	display: grid;
@@ -79,6 +85,46 @@ h1 {
   grid-column: 2 / 6;
   grid-row: 1 / 2;
   margin: 15vh auto auto auto;
+  text-shadow: -5px -5px 0 white, 5px -5px 0 white, -5px 5px 0 white, 5px 5px 0 white;
+}
+
+h2 {
+  font-family: "Changa", sans-serif;
+  text-align: center;
+  font-size: 9em;
+  margin: 0em;
+  padding: 0em;
+}
+
+p {
+  font-family: "Changa", sans-serif;
+}
+
+.aboutArticle {
+  display: grid;
+  grid-template-columns: 25vw 50vw 25vw; 
+  grid-template-rows: 5vh 20vh 5vh 45vh 13vh;
+}
+
+.aboutArticle h2 {
+  grid-row: 2 / 3;
+  grid-column: 1 / 4;
+  color: black;
+  text-shadow: -5px -5px 0 white, 5px -5px 0 white, -5px 5px 0 white, 5px 5px 0 white;
+}
+
+.aboutArticle .Description {
+  grid-row: 4 / 5;
+  grid-column: 2 / 3;
+  margin: 0;
+  background-color: #827777;
+  clip-path: polygon(90% 5%, 80% 80%, 10% 90%, 0 0%);
+}
+
+.aboutArticle .Description p {
+  font-size: 1.5em;
+  color: white;
+  margin: 30px 20% 30px 20%;
 }
 
 .Controls {
@@ -92,13 +138,8 @@ h1 {
 }
 
 .Controls h2 {
-  font-family: "Changa", sans-serif;
-  text-align: center;
   grid-row: 2 / 3;
   grid-column: 1 / 8;
-  font-size: 9em;
-  margin: 0em;
-  padding: 0em;
   color: white;
 }
 
@@ -133,8 +174,12 @@ h1 {
   font-size: 1.5em;
 }
 
+.playArticle {
+  width: 100%;
+  height: 88vh;
+}
 
-.webgl-content * {
+.webgl-content {
   border: 0;
   margin: 0;
   padding: 0;
