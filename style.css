@@ -11,20 +11,20 @@ body {
 header {
   display: grid;
   width: 100%;
-  grid-template-rows: 10vh 1.5vh;
+  grid-template-rows: auto 1.5vh;
 }
 
 nav {
   grid-row: 1;
   padding: 0;
   width: 100%;
-  height: 10vh;
+  height: auto;
 }
 
 .mainNav {
   list-style-type: none;
   margin: 0px;
-  padding: 10px;
+  padding-top: 10px;
   overflow: hidden;
   margin-left: 5%;
 }
@@ -50,10 +50,10 @@ nav {
 }
 
 .mainNav #twitIcon a {
-  background-image: url("TemplateData/Twitterrealreal.png");
   height: 50px;
   width: 50px;
   clip-path: circle(50%);
+  font-size: 1em;
 }
 
 #divider {
@@ -73,7 +73,7 @@ article {
 	margin: 0;
 	display: grid;
 	grid-template-columns: auto 15vw 30vw 30vw 15vw auto; 
-  grid-template-rows: 88.5vh 90vh 10vh;
+  grid-template-rows: 88.5vh 100vh 10vh;
 }
 
 h1 {
@@ -102,7 +102,7 @@ p {
 .aboutArticle {
   display: grid;
   grid-template-columns: 25vw 50vw 25vw; 
-  grid-template-rows: 5vh 20vh 5vh 45vh 13vh;
+  grid-template-rows: 5vh auto 5vh auto 13vh;
 }
 
 .aboutArticle h2 {
@@ -110,6 +110,7 @@ p {
   grid-column: 1 / 4;
   color: black;
   text-shadow: -5px -5px 0 white, 5px -5px 0 white, -5px 5px 0 white, 5px 5px 0 white;
+  margin: 0;
 }
 
 .aboutArticle .Description {
@@ -123,7 +124,7 @@ p {
 .aboutArticle .Description p {
   font-size: 1.5em;
   color: white;
-  margin: 30px 20% 30px 20%;
+  margin: 30px 20% 30% 20%;
 }
 
 .Controls {
@@ -137,7 +138,7 @@ p {
 }
 
 .Controls h2 {
-  grid-row: 2 / 3;
+  grid-row: 1 / 2;
   grid-column: 1 / 8;
   color: white;
 }
